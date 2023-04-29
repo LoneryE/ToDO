@@ -1,0 +1,91 @@
+@import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  display: flex;
+  min-height: 100vh;
+  margin: 15px;
+  .menu{
+    min-height: 100%;
+    padding: 10px;
+    background-color: $menu;
+    border-radius: 10px;
+    .menu_section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .search{
+      margin: 10px 0;
+      input{
+        background: none;
+        outline: none;
+        border: 1px solid #c2c2c2;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+    .tasks_list, .lists_list{
+      margin: 5px 0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .wall{
+    margin-left: 25px;
+    width: 100%;
+    .wall_header{
+      display: flex;
+      align-items: center;
+      h1{
+        margin-right: 20px;
+      }
+      .counter{
+        font-size: 30px;
+      }
+    }
+    .tasks{
+      button{
+        width: 100%;
+        background: none;
+        outline: none;
+        border: 1px solid #c2c2c2;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .filters{
+        width: 20%;
+        display: flex;
+        margin: 10px 0;
+        button{
+          margin: 0 10px 0 0;
+        }
+      }
+      ul{
+        list-style-type: none;
+        margin-top: 10px;
+        li{
+          border-bottom: 1px solid #c2c2c2;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          input{
+            margin-right: 10px;
+          }
+          button{
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}
