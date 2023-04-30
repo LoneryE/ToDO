@@ -1,0 +1,46 @@
+@import '../../../colors.scss';
+
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.244);
+  .modal_add{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    .header{
+      display: flex;
+      justify-content: space-between;
+    }
+    input{
+      background: none;
+        outline: none;
+        border: 1px solid $darklite;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    button{
+      transition: .3s;
+      background: none;
+      outline: none;
+      border: 1px solid $darklite;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}

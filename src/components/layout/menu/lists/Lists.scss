@@ -1,0 +1,32 @@
+@import '../../../../colors.scss';
+
+.lists_list{
+  margin: 5px 0 20px;
+  display: flex;
+  flex-direction: column;
+  button{
+    margin: 3px 0;
+  }
+  .lists_list_add{
+    border-radius: 5px;
+    border: 1px solid ;
+    padding: 5px;
+    margin: 10px 0;
+    h3{
+      text-align: center;
+    }
+    button, input{
+      width: 100%;
+      padding: 3px 0;
+      margin: 5px 0;
+    }
+    input{
+      background: none;
+        outline: none;
+        border: 1px solid $darklite;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+    }
+  }
+}

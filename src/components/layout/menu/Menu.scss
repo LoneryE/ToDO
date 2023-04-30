@@ -1,0 +1,24 @@
+@import "../../../colors.scss";
+
+.menu{
+    min-height: 100%;
+    padding: 10px;
+    background-color: $menu;
+    border-radius: 10px;
+    .menu__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu__search{
+      margin: 10px 0;
+      .input_search{
+        background: none;
+        outline: none;
+        border: 1px solid $darklite;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+  }

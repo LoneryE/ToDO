@@ -1,0 +1,66 @@
+@import '../../../colors.scss';
+
+.wall{
+    margin-left: 25px;
+    width: 100%;
+    .wall__header{
+      display: flex;
+      align-items: center;
+      h1{
+        margin-right: 20px;
+      }
+      .wall__counter{
+        font-size: 30px;
+      }
+    }
+    .wall__tasks{
+      .button__task, .button__task{
+        transition: .3s;
+        background: none;
+        outline: none;
+        border: 1px solid $darklite;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button__task_add{
+        width: 100%;
+      }
+      button:hover{
+        background-color: $darklite;
+      }
+      .filters{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        .button__task_filter_name{
+          margin: 0 10px;
+        }
+      }
+      .wall__tasks__list{
+        list-style-type: none;
+        .wall__tasks__list__elem{
+          border-bottom: 1px solid $darklite;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .wall__tasks__list__elem_info__input_check{
+            margin-right: 10px;
+          }
+          .wall__tasks__list__elem__btn_delete{
+            transition: .3s;
+            background: none;
+            outline: none;
+            border: 1px solid $darklite;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          .wall__tasks__list__elem__btn_delete:hover{
+            background-color: $darklite;
+          }
+        }
+      }
+    }
+  }
