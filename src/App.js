@@ -12,8 +12,7 @@ const App = () => {
         {id: 2, task: 'wwwwwww', completed: true},
         {id: 3, task: 'gsdfq', completed: true},
         {id: 4, task: 'wvvvvvbsdfdf', completed: false}
-      ],
-      count: 4
+      ]
     },
     {
       name: 'Work',
@@ -22,8 +21,7 @@ const App = () => {
         {id: 2, task: 'wwwwwwwasdasd', completed: false},
         {id: 3, task: 'gsdfqasd', completed: true},
         {id: 4, task: 'wvvvvvdw123123bsdfdf', completed: false}
-      ],
-      count: 4
+      ]
     }
   ])
   const [nameTask, setNametask] = useState('Today')
@@ -43,11 +41,11 @@ const App = () => {
     let newArray = tasks
     let newCurrent = newArray.find(el => el === current)
     newCurrent.tasks.sort((a,b) => {
-      if (a.task.toLowerCase() < b.task.toLowerCase()) //сортируем строки по возрастанию
+      if (a.task.toLowerCase() < b.task.toLowerCase())
         return -1
       if (a.task.toLowerCase() > b.task.toLowerCase())
         return 1
-      return 0 //
+      return 0 
     })
     return setTasks([...newArray])
   }
@@ -89,8 +87,7 @@ const App = () => {
     if(newList){
       setTasks([...tasks, {
         name,
-        tasks: [],
-        count: 0
+        tasks: []
       }])
     }
   }

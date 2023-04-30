@@ -15,7 +15,7 @@ const Wall = ({currentTask, getFiltterComlete, getFilterName, addTask, getCompet
           {currentTask ? currentTask.name : null}
         </h1>
         <div className="wall__counter">
-          {currentTask ? currentTask.count : null}
+          {currentTask ? currentTask?.tasks.length : null}
         </div>
       </div>
       <div className="wall__tasks">
